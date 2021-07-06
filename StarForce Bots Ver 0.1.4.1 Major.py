@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 import random
 
@@ -1942,7 +1943,6 @@ async def on_message(message):
             list.append(server.name)
         await message.channel.send("\n".join(list))
 
-
-client.run('NjczOTcyMDM2NDg1MzgyMTY4.Xjh21g.NMX6xTmGYDAxJ1QYG2o_u_ASaiM')  #(본섭)
-#client.run('Njg1MTE0NjAxMDEyMTk5NTUz.Xnwp7A.NcASjFPehbQeKdgwHIeJi42guMk')   #(테섭)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)  #(본섭)
 
